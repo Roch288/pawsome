@@ -96,6 +96,9 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <color key="textColor" red="0.79703891640000002" green="0.22179830980000001" blue="0.017780056339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Walkers walk them," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAd-pK-fPv">
                                 <rect key="frame" x="0.0" y="423" width="414" height="32"/>

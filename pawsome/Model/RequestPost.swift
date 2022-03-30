@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct RequestPost: Codable {
+    var _id: String
+    var message: String
+    var userId:String
+    var userName: String!
+    var createdDate: String
+}

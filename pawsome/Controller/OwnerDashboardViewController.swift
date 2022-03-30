@@ -8,22 +8,17 @@
 import UIKit
 
 class OwnerDashboardViewController: UIViewController {
+    
+    let walkerService = WalkerService()
+    var walkerList = [Walker]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        walkerService.getAllWalker() {success, message, data in
+            self.walkerList = data
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

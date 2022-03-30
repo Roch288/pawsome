@@ -8,22 +8,39 @@
 import UIKit
 
 class WalkerOwnerViewController: UIViewController {
+    
+    let ownerService = OwnerService()
+    var ownerList = [Owner]()
+    var postedRequests = [RequestPost]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        ownerService.getAllOwner(){ success, messsage, data in
+            if success {
+                self.ownerList = data
+                print("owner2 ====> ", self.ownerList)
+                self.getPostedRequest()
+            }
+        }
+        print("owner ====> ", ownerList)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: General Functions
+    func getPostedRequest(){
+        ownerService.getAllRequestPosts(){success, message, data in
+            if success {
+                
+                self.postedRequests = data
+                
+                for (index,_) in self.postedRequests.enumerated() {
+                    self.postedRequests[index].userName = self.ownerList.first(where: {$0._id == self.postedRequests[index].userId})?.fullName ?? ""
+                }
+            }
+        }
     }
-    */
 
 }
