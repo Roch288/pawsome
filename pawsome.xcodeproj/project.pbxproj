@@ -16,6 +16,7 @@
 		5BF793E127F958DF00D70107 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF793E027F958DF00D70107 /* OnboardingCollectionViewCell.swift */; };
 		6922EF144757C89DC32ECC68 /* Pods_Pawsome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864612827240C32ADF71D728 /* Pods_Pawsome.framework */; };
 		B22DB64227FABC8E009EF39B /* WalkerMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22DB64127FABC8E009EF39B /* WalkerMapViewController.swift */; };
+		B230FFE827FAC02D00B4C5D6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230FFE727FAC02D00B4C5D6 /* LocationManager.swift */; };
 		C744089727F754BA00226CB0 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C744089627F754BA00226CB0 /* Ubuntu-Regular.ttf */; };
 		D526C9CF27E981730079DBDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D526C9CE27E981730079DBDD /* AppDelegate.swift */; };
 		D526C9D327E981730079DBDD /* WalthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D526C9D227E981730079DBDD /* WalthroughViewController.swift */; };
@@ -86,6 +87,7 @@
 		5BF793E027F958DF00D70107 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		864612827240C32ADF71D728 /* Pods_Pawsome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pawsome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22DB64127FABC8E009EF39B /* WalkerMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalkerMapViewController.swift; path = pawsome/View/Walker/WalkerMapViewController.swift; sourceTree = SOURCE_ROOT; };
+		B230FFE727FAC02D00B4C5D6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Pawsome/Controller/LocationManager.swift; sourceTree = SOURCE_ROOT; };
 		C744089627F754BA00226CB0 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		D526C9CB27E981730079DBDD /* Pawsome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pawsome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D526C9CE27E981730079DBDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 		D526C9E427E984900079DBDD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B230FFE727FAC02D00B4C5D6 /* LocationManager.swift */,
 				5BF793DF27F9588C00D70107 /* Onboarding */,
 				D53BEB0B27F5762000201220 /* Owner */,
 				D53BEB0A27F5761B00201220 /* Walker */,
@@ -542,6 +545,7 @@
 				D53BEAFA27F56C3A00201220 /* Configuration.swift in Sources */,
 				D5F6F14E27ECC988003A343C /* SignupViewController.swift in Sources */,
 				D534199C27F60E6D006411E4 /* WalkerConfirmWalkViewController.swift in Sources */,
+				B230FFE827FAC02D00B4C5D6 /* LocationManager.swift in Sources */,
 				D53BEB2627F5AC5600201220 /* OwnerChatViewController.swift in Sources */,
 				D5FE28ED27F9C5D300B1EAF1 /* StaticPage.swift in Sources */,
 				D5B8C21927F56B7500A8271D /* WalkerService.swift in Sources */,

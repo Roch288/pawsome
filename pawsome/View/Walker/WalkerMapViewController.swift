@@ -8,13 +8,22 @@ import MapKit
 import UIKit
 
 class WalkerMapViewController: UIViewController {
+    
+    private let map: MKMapView = {
+        let map = MKMapView()
+        return map
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.addSubview(map)
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        map.frame = view.bounds
+    }
 
     /*
     // MARK: - Navigation
