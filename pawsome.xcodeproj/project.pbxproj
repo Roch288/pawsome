@@ -15,6 +15,7 @@
 		5BF793DE27F9557300D70107 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF793DD27F9557200D70107 /* OnboardingSlide.swift */; };
 		5BF793E127F958DF00D70107 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF793E027F958DF00D70107 /* OnboardingCollectionViewCell.swift */; };
 		6922EF144757C89DC32ECC68 /* Pods_Pawsome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864612827240C32ADF71D728 /* Pods_Pawsome.framework */; };
+		B22DB64227FABC8E009EF39B /* WalkerMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22DB64127FABC8E009EF39B /* WalkerMapViewController.swift */; };
 		C744089727F754BA00226CB0 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C744089627F754BA00226CB0 /* Ubuntu-Regular.ttf */; };
 		D526C9CF27E981730079DBDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D526C9CE27E981730079DBDD /* AppDelegate.swift */; };
 		D526C9D327E981730079DBDD /* WalthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D526C9D227E981730079DBDD /* WalthroughViewController.swift */; };
@@ -84,6 +85,7 @@
 		5BF793DD27F9557200D70107 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		5BF793E027F958DF00D70107 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		864612827240C32ADF71D728 /* Pods_Pawsome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pawsome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22DB64127FABC8E009EF39B /* WalkerMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalkerMapViewController.swift; path = pawsome/View/Walker/WalkerMapViewController.swift; sourceTree = SOURCE_ROOT; };
 		C744089627F754BA00226CB0 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		D526C9CB27E981730079DBDD /* Pawsome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pawsome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D526C9CE27E981730079DBDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 				D534199727F60961006411E4 /* WalkerRequestTableViewCell.swift */,
 				D534199D27F60EA3006411E4 /* WalkerConfirmWalkTableViewCell.swift */,
 				D53DE7B227FA8F31008E8DB0 /* OwnersPostTableViewCell.swift */,
+				B22DB64127FABC8E009EF39B /* WalkerMapViewController.swift */,
 			);
 			path = Walker;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				D53BEB2827F5AD5000201220 /* OwnerChatTableViewCell.swift in Sources */,
 				D588E8BC27EAF70E00599370 /* LoginViewController.swift in Sources */,
 				D5FE28EF27F9C61900B1EAF1 /* StaticPageService.swift in Sources */,
+				B22DB64227FABC8E009EF39B /* WalkerMapViewController.swift in Sources */,
 				D534198A27F5F558006411E4 /* Dog.swift in Sources */,
 				D534198827F5F44C006411E4 /* WalkerDogListViewController.swift in Sources */,
 				D5B5E49A27FA13C100ED567E /* WalkersProfileViewController.swift in Sources */,
