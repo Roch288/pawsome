@@ -73,17 +73,8 @@ class SignupViewController: UIViewController {
         guard let password = passwordTextField.text, !password.isEmpty else { self.alert(message: "Password is empty", title: nil, okAction: nil);
             return }
         guard password.count >= 8 else { self.alert(message: "Password should be greater than 8", title: nil, okAction: nil);
-            
-            
             return }
-        // Firebase Login
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password , completion: {authResult, error in guard let result = authResult, error == nil else
-            {
-            print("Error Creating User")
-            return
-        }
-            let user = result.user
-            print(" Created User : \(user)")})
+     
         
         
         //go to login or dash board
@@ -105,6 +96,14 @@ class SignupViewController: UIViewController {
                 self.alert(message: message, title: "Error", okAction: nil)
             }
         }
+        // Firebase Login
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password , completion: {authResult, error in guard let result = authResult, error == nil else
+            {
+            print("Error Creating User")
+            return
+        }
+            let user = result.user
+            print(" Created User : \(user)")})
     }
     
 }
