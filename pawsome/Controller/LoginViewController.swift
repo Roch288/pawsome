@@ -7,6 +7,8 @@
 
 import UIKit
 import SwiftSpinner
+import FirebaseAuth
+
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
@@ -47,6 +49,19 @@ class LoginViewController: UIViewController {
             return }
         
         SwiftSpinner.show("Logging In...")
+       
+        
+        //Firebase login
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: {authResult, error in
+            guard let result = authResult, error == nil else{
+                print("Failed to login with \(email)")
+                return
+            }
+            
+            let user = result.user
+            print("Sucessfully logged in with \(user)")
+            
+        })
         
         loginService.login(email: email, password: password) { success, message, profile in
             SwiftSpinner.hide()

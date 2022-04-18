@@ -7,6 +7,8 @@
 
 import UIKit
 import SwiftSpinner
+import FirebaseAuth
+
 
 class SignupViewController: UIViewController {
     
@@ -56,6 +58,7 @@ class SignupViewController: UIViewController {
     }
     
     @IBAction func signupButtonTapped(_ sender: Any) {
+        
         self.view.endEditing(true)
         guard let fullName = fullNameTextField.text, !fullName.isEmpty else { self.alert(message: "Full name is empty", title: nil, okAction: nil);
             return }
@@ -70,7 +73,17 @@ class SignupViewController: UIViewController {
         guard let password = passwordTextField.text, !password.isEmpty else { self.alert(message: "Password is empty", title: nil, okAction: nil);
             return }
         guard password.count >= 8 else { self.alert(message: "Password should be greater than 8", title: nil, okAction: nil);
+            
+            
             return }
+        // Firebase Login
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password , completion: {authResult, error in guard let result = authResult, error == nil else
+            {
+            print("Error Creating User")
+            return
+        }
+            let user = result.user
+            print(" Created User : \(user)")})
         
         
         //go to login or dash board
@@ -78,6 +91,7 @@ class SignupViewController: UIViewController {
         registerService.register(fullName: fullName, phone: phoneNumber, email: email, password: password, user_Id: GlobalConstants.KeyValues.userType?.rawValue ?? 0) { success, message, data in
             SwiftSpinner.hide()
             if success {
+               
                 guard let profile = data else {
                     return
                 }
@@ -92,4 +106,5 @@ class SignupViewController: UIViewController {
             }
         }
     }
+    
 }

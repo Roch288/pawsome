@@ -7,6 +7,7 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import Firebase
 
 let deploymentMode: DeploymentMode = .live
 
@@ -22,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
         if !(GlobalConstants.KeyValues.isOnboardingPreviouslyOpened ?? false) {
             goToOnboardingViewControllerPage()
@@ -35,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             goToWalkthroughNavigationControllerPage()
         }
+        
         return true
     }
     
