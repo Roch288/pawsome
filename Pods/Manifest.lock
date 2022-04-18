@@ -3,7 +3,21 @@ PODS:
   - AlamofireImage (4.2.0):
     - Alamofire (~> 5.4)
   - Cosmos (23.0.0)
+  - InputBarAccessoryView (5.4.0):
+    - InputBarAccessoryView/Core (= 5.4.0)
+  - InputBarAccessoryView/Core (5.4.0)
   - IQKeyboardManagerSwift (6.5.9)
+  - JGProgressHUD (2.2)
+  - MessageKit (3.7.0):
+    - InputBarAccessoryView (~> 5.4.0)
+  - Realm (10.25.1):
+    - Realm/Headers (= 10.25.1)
+  - Realm/Headers (10.25.1)
+  - RealmSwift (10.25.1):
+    - Realm (= 10.25.1)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
   - SwiftSpinner (2.2.0)
   - SwiftyJSON (5.0.1)
 
@@ -12,6 +26,10 @@ DEPENDENCIES:
   - AlamofireImage
   - Cosmos (~> 23.0)
   - IQKeyboardManagerSwift
+  - JGProgressHUD
+  - MessageKit
+  - RealmSwift
+  - SDWebImage
   - SwiftSpinner
   - SwiftyJSON
 
@@ -20,7 +38,13 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - Cosmos
+    - InputBarAccessoryView
     - IQKeyboardManagerSwift
+    - JGProgressHUD
+    - MessageKit
+    - Realm
+    - RealmSwift
+    - SDWebImage
     - SwiftSpinner
     - SwiftyJSON
 
@@ -28,10 +52,16 @@ SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  InputBarAccessoryView: 74d471ab1fa1736806be50328df79257e52865a9
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  MessageKit: 8e76dd8d65ad44b49e1651c673497146416461e9
+  Realm: 1a6e9b4f6983711655d8c0bcb6d2d29c3afbb1f3
+  RealmSwift: e72669550d27082aa4fad5d176f5076cfe806245
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
   SwiftSpinner: f9b59477fe107427f2b5b835497d6636fa167ede
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 36e1b437128f59464a92d124f2cea5f864e5a571
+PODFILE CHECKSUM: 4b6a3a4a10c824127c3f8c62224965f171fb71fd
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

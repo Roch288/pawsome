@@ -8,6 +8,11 @@
 import UIKit
 
 class ConversationViewController: UIViewController {
+    
+    private let tableVIew: UITableView = {
+        let table = UITableView()
+        return table
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -122,7 +122,7 @@
 		864612827240C32ADF71D728 /* Pods_Pawsome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pawsome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26F9937280D2EC50021D109 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = ../../../../../../../../DatabaseManager.swift; sourceTree = "<group>"; };
 		B2902F89280CFCE90016E714 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B2A03024280CF25E00189100 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationViewController.swift; path = pawsome/Controller/ConversationViewController.swift; sourceTree = SOURCE_ROOT; };
+		B2A03024280CF25E00189100 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationViewController.swift; path = Pawsome/Controller/Owner/ConversationViewController.swift; sourceTree = SOURCE_ROOT; };
 		C744089627F754BA00226CB0 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		D526C9CB27E981730079DBDD /* Pawsome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pawsome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D526C9CE27E981730079DBDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -328,7 +328,6 @@
 				D5FE28F027F9C8B700B1EAF1 /* StaticPageViewController.swift */,
 				D5B5E49727FA108A00ED567E /* ChangePasswordViewController.swift */,
 				D594E92427FA19EE000214EC /* EditProfileViewController.swift */,
-				B2A03024280CF25E00189100 /* ConversationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -397,6 +396,7 @@
 				D53BEB2D27F5B3AA00201220 /* OwnerConfirmWalkViewController.swift */,
 				D5B5E49527FA03C500ED567E /* ProfileViewController.swift */,
 				5BB70CC427FBB9FB00304436 /* WalkDetailViewController.swift */,
+				B2A03024280CF25E00189100 /* ConversationViewController.swift */,
 				D561DF1227FC13C300A5A6D6 /* CreateNoticeViewController.swift */,
 			);
 			path = Owner;

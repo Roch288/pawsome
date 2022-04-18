@@ -12,4 +12,8 @@ target 'Pawsome' do
  pod 'AlamofireImage'
 pod 'IQKeyboardManagerSwift'
 pod 'Cosmos', '~> 23.0'
+pod 'MessageKit'
+pod 'JGProgressHUD'
+pod 'RealmSwift'
+pod 'SDWebImage'
 end

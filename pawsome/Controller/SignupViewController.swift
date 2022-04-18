@@ -96,6 +96,14 @@ class SignupViewController: UIViewController {
                 self.alert(message: message, title: "Error", okAction: nil)
             }
         }
+       
+        DatabaseManager.shared.userExists(with: email, completion: {exists in
+            guard !exists else {
+                //User already exists
+                return
+            }
+        })
+        
         // Firebase Login
         FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password , completion: {authResult, error in guard let result = authResult, error == nil else
             {

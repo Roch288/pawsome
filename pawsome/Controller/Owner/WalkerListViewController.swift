@@ -26,7 +26,6 @@ class WalkerListViewController: UIViewController {
         self.setupTableView()
         self.getWalkers()
         
-        DatabaseManager.shared.test()
         
 //        [[UILabel appearance] setFont:[UIFont fontWithName:@"Ubuntu-Regular" size:17.0]];
     }
