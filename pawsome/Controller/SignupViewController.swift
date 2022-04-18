@@ -102,8 +102,9 @@ class SignupViewController: UIViewController {
             print("Error Creating User")
             return
         }
-            let user = result.user
-            print(" Created User : \(user)")})
+        
+            DatabaseManager.shared.insertUser(with: PawsomeAppUser(email: email, phone: phoneNumber))
+        })
     }
     
 }

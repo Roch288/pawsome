@@ -17,6 +17,7 @@
 		5BF793DE27F9557300D70107 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF793DD27F9557200D70107 /* OnboardingSlide.swift */; };
 		5BF793E127F958DF00D70107 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF793E027F958DF00D70107 /* OnboardingCollectionViewCell.swift */; };
 		6922EF144757C89DC32ECC68 /* Pods_Pawsome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864612827240C32ADF71D728 /* Pods_Pawsome.framework */; };
+		B26F9938280D2EC50021D109 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26F9937280D2EC50021D109 /* DatabaseManager.swift */; };
 		B2902F8A280CFCE90016E714 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2902F89280CFCE90016E714 /* GoogleService-Info.plist */; };
 		B2A03025280CF25E00189100 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A03024280CF25E00189100 /* ConversationViewController.swift */; };
 		B2A03028280CF79800189100 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B2A03027280CF79800189100 /* FirebaseAnalytics */; };
@@ -119,6 +120,7 @@
 		5BF793DD27F9557200D70107 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		5BF793E027F958DF00D70107 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		864612827240C32ADF71D728 /* Pods_Pawsome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pawsome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26F9937280D2EC50021D109 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = ../../../../../../../../DatabaseManager.swift; sourceTree = "<group>"; };
 		B2902F89280CFCE90016E714 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B2A03024280CF25E00189100 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationViewController.swift; path = pawsome/Controller/ConversationViewController.swift; sourceTree = SOURCE_ROOT; };
 		C744089627F754BA00226CB0 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
@@ -232,6 +234,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		B26F9936280D2EA50021D109 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B26F9937280D2EC50021D109 /* DatabaseManager.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C744089527F7548F00226CB0 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +271,7 @@
 		D526C9CD27E981730079DBDD /* Pawsome */ = {
 			isa = PBXGroup;
 			children = (
+				B26F9936280D2EA50021D109 /* Resources */,
 				B2902F89280CFCE90016E714 /* GoogleService-Info.plist */,
 				C744089527F7548F00226CB0 /* Font */,
 				D53BEB0C27F577F000201220 /* Helper */,
@@ -608,6 +619,7 @@
 			files = (
 				D594E92527FA19EE000214EC /* EditProfileViewController.swift in Sources */,
 				D53BEB2427F5A84100201220 /* WalkerProfileViewController.swift in Sources */,
+				B26F9938280D2EC50021D109 /* DatabaseManager.swift in Sources */,
 				D5B8C21127F562AF00A8271D /* String+Extension.swift in Sources */,
 				D53BEB2827F5AD5000201220 /* OwnerChatTableViewCell.swift in Sources */,
 				D588E8BC27EAF70E00599370 /* LoginViewController.swift in Sources */,
